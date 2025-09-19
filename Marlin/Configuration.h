@@ -136,7 +136,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "Sams printer 7"
+#define CUSTOM_MACHINE_NAME "Sams printer A"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -380,9 +380,15 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
-  #define DEFAULT_Kp 22.2
-  #define DEFAULT_Ki 1.08
-  #define DEFAULT_Kd 114
+//  #define DEFAULT_Kp 22.2
+//  #define DEFAULT_Ki 1.08
+//  #define DEFAULT_Kd 114
+
+
+// From auto tune
+  #define DEFAULT_Kp 30.56
+  #define DEFAULT_Ki 2.68
+  #define DEFAULT_Kd 86.94
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -1225,7 +1231,7 @@
 // M502 - reverts to the default "factory settings".  You still need to store them in EEPROM afterwards if you want to.
 //
 #define EEPROM_SETTINGS // Enable for M500 and M501 commands
-#define DISABLE_M503    // Saves ~2700 bytes of PROGMEM. Disable for release!
+//#define DISABLE_M503    // Saves ~2700 bytes of PROGMEM. Disable for release!
 #define EEPROM_CHITCHAT   // Give feedback on EEPROM commands. Disable to save PROGMEM.
 
 //
